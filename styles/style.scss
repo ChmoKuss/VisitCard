@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  background-image: url(../src/images/gorod-doroga-ogni-zdaniya-noch.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  &__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 2em;
+    border: solid 4px rgba($color: #fff, $alpha: 0.2);
+  }
+  &__name,
+  &__info {
+    font-size: 20px;
+    color: yellow;
+    border: solid 2px yellow;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    margin-top: 1em;
+    backdrop-filter: contrast(60%) brightness(60%);
+  }
+}
+.main {
+  max-width: max-content;
+  margin: 3em auto;
+
+  &__info {
+    width: 300px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-size: 20px;
+    color: yellow;
+    border: solid 2px yellow;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    margin-top: 1em;
+    backdrop-filter: contrast(60%) brightness(60%);
+  }
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  margin: 0 auto;
+}
+.main__icon {
+  height: 1em;
+  margin-right: 1.5em;
+}
+.batman {width: 100vw;
+    height: 100vh;
+  position: absolute !important;
+  z-index: -1;
+  opacity: 40%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
