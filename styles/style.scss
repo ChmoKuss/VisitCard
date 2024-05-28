@@ -9,6 +9,9 @@ body {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  @media screen and (max-width:500px) {
+    
+  }
 }
 header {
   display: flex;
@@ -51,6 +54,7 @@ header {
     margin-top: 1em;
     backdrop-filter: contrast(60%) brightness(60%);
   }
+  &__list{list-style: none;}
 }
 .wrapper {
   display: flex;
